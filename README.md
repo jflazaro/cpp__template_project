@@ -1,16 +1,16 @@
 Template for developing c++ projects 
 
-The file structure was designed with CMake in mind.
-Assign an executable name in the CMakeLists.txt by editing this line:
-  set(MY_PROJECT_NAME "template_project") <-- Replace 'template_project' with your desired executable name.
+The file structure was designed with CMake in mind.<br />
+Assign an executable name in the CMakeLists.txt by editing this line:<br />
+  set(MY_PROJECT_NAME "template_project") <-- Replace 'template_project' with your desired executable name.<br />
 
-Usage (MacOS/Linux):
-cd build/
-cmake ..
-make
+Usage (MacOS/Linux):<br />
+cd build/<br />
+cmake ..<br />
+make<br />
 
-Usage (Windows):
-cd build/
-cmake ..
-cmake -b .
-(Find exe under build/Debug/)
+Usage (Windows):<br />
+cd build/<br />
+cmake ..<br />
+cmake -b .<br />
+(Find exe under build/Debug/)<br />
