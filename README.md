@@ -8,9 +8,10 @@ Usage (MacOS/Linux):<br />
 cd build/<br />
 cmake ..<br />
 make<br />
+(Find binary file within this same directory.)
 
 Usage (Windows):<br />
 cd build/<br />
 cmake ..<br />
-cmake -b .<br />
+cmake --build .<br />
 (Find exe under build/Debug/)<br />
