@@ -1,6 +1,5 @@
 This directory is meant to be used with cmake.
 
-i.e.
+e.g.
 cmake ..
 make
-./<exe_name>

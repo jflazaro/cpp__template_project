@@ -8,7 +8,7 @@ Usage (MacOS/Linux):<br />
 cd build/<br />
 cmake ..<br />
 make<br />
-(Find binary file within this same directory.)
+(Find binary file within this same directory.)<br />
 
 Usage (Windows):<br />
 cd build/<br />
