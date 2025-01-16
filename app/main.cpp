@@ -1,7 +1,14 @@
-#include "iostream"
+#include <iostream>
+
+using namespace std;
+
+class Solution {
+public:
+    
+};
 
 int main() {
-    std::cout << "Hello World" << std::endl;
+    Solution sln;
 
     return 0;
 }

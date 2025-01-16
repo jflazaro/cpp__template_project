@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.31)
 
-set(MY_PROJECT_NAME "template_project")
+set(MY_PROJECT_NAME "main")
 
 project(${MY_PROJECT_NAME})
 add_executable(${MY_PROJECT_NAME})
