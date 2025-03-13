@@ -25,6 +25,9 @@ if(TEST_SOURCES)
     # Link Google Test and sources library
     target_link_libraries(runTests PRIVATE sources_lib GTest::gtest_main)
 
+    # Add include directory for headers/
+    include_directories(${CMAKE_SOURCE_DIR}/headers)
+
     # Register tests with CTest
     include(GoogleTest)
     gtest_discover_tests(runTests)
