@@ -22,11 +22,20 @@ if(TEST_SOURCES)
     # Add test executable
     add_executable(runTests ${TEST_SOURCES})
 
-    # Link Google Test and sources library
-    target_link_libraries(runTests PRIVATE sources_lib GTest::gtest_main)
+    # Link Google Test, GMock, and sources library
+    target_link_libraries(runTests
+        PRIVATE
+        sources_lib
+        GTest::gtest_main
+        GTest::gmock_main
+    )
 
-    # Add include directory for headers/
-    include_directories(${CMAKE_SOURCE_DIR}/headers)
+    # Add include directories for headers and Google Mock
+    include_directories(
+        ${CMAKE_SOURCE_DIR}/header
+        ${gtest_SOURCE_DIR}/include
+        ${gtest_SOURCE_DIR}/../googlemock/include
+    )
 
     # Register tests with CTest
     include(GoogleTest)
